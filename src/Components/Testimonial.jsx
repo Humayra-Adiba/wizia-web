@@ -73,7 +73,65 @@ const Carousel = () => {
             </div>
           ))}
         </div>
-
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2  text-white rounded-full w-8 h-8 flex items-center justify-center"
+        >
+          <svg
+            width="40"
+            height="39"
+            viewBox="0 0 40 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="40"
+              y="38.5"
+              width="40"
+              height="38"
+              rx="8"
+              transform="rotate(-180 40 38.5)"
+              fill="#96ACAF"
+              fill-opacity="0.2"
+            />
+            <path
+              opacity="0.5"
+              d="M28 19.5L12 19.5M19 26.5L12 19.5L19 12.5"
+              stroke="#96ACAF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2  text-white rounded-full w-8 h-8 flex items-center justify-center"
+        >
+          <svg
+            width="40"
+            height="39"
+            viewBox="0 0 40 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              y="0.5"
+              width="40"
+              height="38"
+              rx="8"
+              fill="#96ACAF"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M12 19.5H28M28 19.5L21 12.5M28 19.5L21 26.5"
+              stroke="#0FF1F6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
         <div className="flex justify-center mt-4 space-x-2">
           {testimonials.map((_, index) => (
             <button
