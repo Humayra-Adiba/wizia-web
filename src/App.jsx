@@ -6,6 +6,7 @@ import PreferedEmail from "./Components/PreferedEmail"
 import Carousel from "./Components/Testimonial"
 import Allocate from "./Components/Allocate"
 import GetStarted from "./Components/GetStarted"
+import Footer from "./Components/Footer"
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Carousel/>
     <Allocate/>
     <GetStarted/>
+    <Footer/>
     </>
   )
 }
