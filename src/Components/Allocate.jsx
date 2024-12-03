@@ -32,7 +32,17 @@ function Allocate() {
                           Keep your reps “in the air” -- out in the field and on the phone <br/>where they can build relationships.hj
                       </p>
 
-                     
+                      <div className='flex flex-col md:flex-row lg:flex-row gap-[32px] md:mt-[94px] mt-[30px]'>
+                          {Info.map((item, i) => (
+                              <div key={i} className='w-[174px] '>
+                                  <h3 className='md:text-[40px] text-[30px] font-bold text-[#0FF1F6]'>
+                                      {item.percent}
+                                  </h3>
+
+                                  <p className='md:w-[174px] text-[16px] sm:w-full'>{item.txt}</p>
+                              </div>
+                          ))}
+                      </div>
                  </div>
               </div>
 
