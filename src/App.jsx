@@ -4,6 +4,8 @@ import Logos from "./Components/Logos"
 import Card from "./Components/Card"
 import PreferedEmail from "./Components/PreferedEmail"
 import Carousel from "./Components/Testimonial"
+import Allocate from "./Components/Allocate"
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <Card/>
     <PreferedEmail/>
     <Carousel/>
+    <Allocate/>
     </>
   )
 }
