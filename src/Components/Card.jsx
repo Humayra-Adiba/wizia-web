@@ -22,7 +22,7 @@ function Card() {
   return (
     <>
       <section className=" bg-[#002228] text-white py-[50px] px-[35px]">
-        <div className="flex  flex-col flex-wrap sm:flex-row md:flex-row lg:flex-row ml-[20px] sm:ml-[50px] md:ml-[120px] max-w-[1440px] gap-[24px] ">
+        <div className="flex  flex-col lg:flex-nowrap flex-wrap sm:flex-row md:flex-row lg:flex-row ml-[20px] sm:ml-[50px] md:ml-[120px] max-w-[1440px] gap-[24px] ">
         {CardData.map((item, index) => (
             <div
               key={index}
