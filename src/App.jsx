@@ -3,6 +3,8 @@ import Hero from "./Components/Hero"
 import Logos from "./Components/Logos"
 import Card from "./Components/Card"
 import PreferedEmail from "./Components/PreferedEmail"
+import Carousel from "./Components/Testimonial"
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
     <Logos/>
     <Card/>
     <PreferedEmail/>
+    <Carousel/>
     </>
   )
 }

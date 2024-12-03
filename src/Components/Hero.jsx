@@ -8,15 +8,15 @@ function Hero() {
         <div className="text-center sm:text-start md:text-start lg:text-start mt-[44px] sm:mt-[110px] sm:ml-[50px] md:ml-[120px] max-w-[1440px] ">
           <p className="text-[#0FF1F6]">AI SDRs (aiDRs)</p>
 
-          <h3 className="text-5xl sm:text-[64px] md:text-[64px] lg:text-[64px] mt-[5px] font-semibold text-[#FFFFFF] sm:w-[375px] md:w-[391px] lg:w-[391px] ">
-            More leads, less people.
+          <h3 className="text-5xl sm:text-[64px] md:text-[64px] lg:text-[64px] mt-[5px] font-bold text-[#FFFFFF] sm:w-[375px] md:w-[391px] lg:w-[391px] ">
+            <span className="md:inline block">More <em className="font-normal">leads</em>, </span><span className="md:inline block">less <em className="font-normal">people</em>.</span>
           </h3>
 
-          <p className="text-[#FFFFFF] mt-[20px] sm:w-[343px] md:w-[450px] ">
-            Train an aiDR on your ICP and messaging matrix. Activate it on a
-            patch. It will send personalized sequences to every target contact.
+          <p className="text-[#FFFFFF] mt-[20px] font-light sm:w-[343px] md:w-[450px] ">
+            <p className="ml-4">Train an aiDR on your ICP and messaging matrix.</p>Activate it on a
+            patch.It will send personalized<br/>sequences to every target contact.
           </p>
-          <Button className="bg-primary mt-[24px] w-[300px] sm:w-[216px] md:w-[216px] hover:bg-yellow-400">
+          <Button className="bg-[#0FF1F6] rounded-full mt-[24px] w-[300px] sm:w-[216px] md:w-[216px] hover:bg-yellow-400">
             Sign Up for the Beta
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

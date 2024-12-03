@@ -41,7 +41,7 @@ function Card() {
                 <h3 className="text-[28px] font-semibold mt-[20px]">
                   {item.Heading}
                 </h3>
-                <p className="text-[18px] w-full md:w-[260px] lg:w-[260px] text-[#FFFFFF] mt-[10px]">
+                <p className="text-[18px] w-full font-light md:w-[260px] lg:w-[260px] text-[#FFFFFF] mt-[10px]">
                   {item.Description}
                 </p>
               </div>

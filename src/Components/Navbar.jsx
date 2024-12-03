@@ -56,7 +56,7 @@ function Navigation() {
           </NavbarContent>
           <NavbarContent justify="end">
             <NavbarItem className="hidden md:flex">
-              <Button color="primary" variant="solid" className="rounded-full">
+              <Button  variant="solid" className="bg-[#0FF1F6] rounded-full">
                 <Link to="#" className="text-black ">
                   Book a Demo
                 </Link>
