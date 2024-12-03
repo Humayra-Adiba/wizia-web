@@ -24,7 +24,25 @@ const testimonials = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <div className="w-full bg-[#002228] flex justify-center py-10">
@@ -55,8 +73,6 @@ const Carousel = () => {
             </div>
           ))}
         </div>
-
-       
 
         <div className="flex justify-center mt-4 space-x-2">
           {testimonials.map((_, index) => (
