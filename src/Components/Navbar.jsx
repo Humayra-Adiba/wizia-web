@@ -56,18 +56,25 @@ function Navigation() {
           </NavbarContent>
           <NavbarContent justify="end">
             <NavbarItem className="hidden md:flex">
-              <Button  variant="solid" className="bg-[#0FF1F6] rounded-full">
-                <Link to="#" className="text-black ">
+              <Link to="#">
+                <Button
+                  variant="solid"
+                  className="bg-[#0FF1F6] rounded-full text-black hover:bg-yellow-400"
+                >
                   Book a Demo
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </NavbarItem>
             <NavbarItem className="hidden  sm:flex">
-              <Button color="white" variant="bordered" className="rounded-full">
-                <Link to="#" className="text-white ">
+              <Link to="#">
+                <Button
+                  color="white"
+                  variant="bordered"
+                  className="rounded-full text-white hover:bg-green-500"
+                >
                   Contact Us
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </NavbarItem>
 
             <NavbarMenuToggle
@@ -79,7 +86,10 @@ function Navigation() {
             {menuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
-                  className="w-full text-2xl pt-4 text-white" to="#" size="lg" >
+                  className="w-full text-2xl pt-4 text-white"
+                  to="#"
+                  size="lg"
+                >
                   {item}
                 </Link>
               </NavbarMenuItem>
@@ -91,4 +101,4 @@ function Navigation() {
   );
 }
 
-export default Navigation
+export default Navigation;

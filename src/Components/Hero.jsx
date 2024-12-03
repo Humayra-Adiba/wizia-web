@@ -13,7 +13,7 @@ function Hero() {
           </h3>
 
           <p className="text-[#FFFFFF] mt-[20px] font-light sm:w-[343px] md:w-[450px] ">
-            <p className="ml-4">Train an aiDR on your ICP and messaging matrix.</p>Activate it on a
+            <p className="ml-4 md:ml-0">Train an aiDR on your ICP and messaging matrix.</p>Activate it on a
             patch.It will send personalized<br/>sequences to every target contact.
           </p>
           <Button className="bg-[#0FF1F6] rounded-full mt-[24px] w-[300px] sm:w-[216px] md:w-[216px] hover:bg-yellow-400">

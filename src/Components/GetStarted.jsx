@@ -15,7 +15,7 @@ function GetStarted() {
         </p>
 
         <div className="flex justify-center mt-[23px]">
-          <Button className="bg-[#0FF1F6] mt-[24px] w-[300px] sm:w-[216px] md:w-[216px] rounded-full">
+          <Button className="bg-[#0FF1F6]  hover:bg-green-500 mt-[24px] w-[300px] sm:w-[216px] md:w-[216px] rounded-full">
             Sign Up for the Beta
             <svg
               width="16"
