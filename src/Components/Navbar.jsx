@@ -33,23 +33,23 @@ function Navigation() {
 
           <NavbarContent className="hidden sm:flex gap-8 " justify="center">
             <NavbarItem>
-              <Link color="foreground" href="#" className="text-white">
+              <Link color="foreground" setItemOpen="#" className="text-white">
                 About Us
               </Link>
             </NavbarItem>
             <NavbarItem isActive>
-              <Link href="#" aria-current="page" className="text-white">
+              <Link to="#" aria-current="page" className="text-white">
                 Pricing
               </Link>
             </NavbarItem>
             <NavbarItem>
-              <Link color="foreground" href="#" className="text-white ">
+              <Link color="foreground" to="#" className="text-white ">
                 Customers
               </Link>
             </NavbarItem>
 
             <NavbarItem>
-              <Link color="foreground" href="#" className="text-white">
+              <Link color="foreground" to="#" className="text-white">
                 Solutions
               </Link>
             </NavbarItem>
@@ -57,14 +57,14 @@ function Navigation() {
           <NavbarContent justify="end">
             <NavbarItem className="hidden md:flex">
               <Button color="primary" variant="solid" className="rounded-full">
-                <Link href="#" className="text-black ">
+                <Link to="#" className="text-black ">
                   Book a Demo
                 </Link>
               </Button>
             </NavbarItem>
             <NavbarItem className="hidden  sm:flex">
               <Button color="white" variant="bordered" className="rounded-full">
-                <Link href="#" className="text-white ">
+                <Link to="#" className="text-white ">
                   Contact Us
                 </Link>
               </Button>
@@ -75,7 +75,16 @@ function Navigation() {
               className="sm:hidden text-white"
             />
           </NavbarContent>
-          
+          <NavbarMenu className="bg-[#002228]">
+            {menuItems.map((item, index) => (
+              <NavbarMenuItem key={`${item}-${index}`}>
+                <Link
+                  className="w-full text-2xl pt-4 text-white" to="#" size="lg" >
+                  {item}
+                </Link>
+              </NavbarMenuItem>
+            ))}
+          </NavbarMenu>
         </Navbar>
       </div>
     </>
