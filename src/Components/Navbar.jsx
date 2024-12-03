@@ -21,7 +21,7 @@ function Navigation() {
       <div className="w-[100%] bg-[#002228] ">
         <Navbar
           onMenuOpenChange={setItemOpen}
-          className="bg-[#002228] mx-auto "
+          className="bg-[#002228] mx-auto " maxWidth="lg"
         >
           <NavbarContent>
             <NavbarBrand>
