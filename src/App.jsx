@@ -5,6 +5,7 @@ import Card from "./Components/Card"
 import PreferedEmail from "./Components/PreferedEmail"
 import Carousel from "./Components/Testimonial"
 import Allocate from "./Components/Allocate"
+import GetStarted from "./Components/GetStarted"
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <PreferedEmail/>
     <Carousel/>
     <Allocate/>
+    <GetStarted/>
     </>
   )
 }
